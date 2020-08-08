@@ -3,3 +3,13 @@
   left: 0;
   right: 0;
 }
+
+.body__container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  column-gap: 30px;
+}
+
+.cards__cont {
+  grid-column: 2;
+}

@@ -2,19 +2,19 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./style/index.scss";
-import location from "./assets/location.svg";
-import building from "./assets/building.svg";
-import money from "./assets/money.svg";
-import target from "./assets/target.svg";
+import location from "../Job_cards/assets/location.svg";
+import building from "../Job_cards/assets/building.svg";
+import money from "../Job_cards/assets/money.svg";
+import target from "../Job_cards/assets/target.svg";
 
-class index extends Component {
+export default class index extends Component {
   static propTypes = {
     prop: PropTypes,
   };
 
   render() {
     return (
-      <div className="card_container">
+      <div className="job_container">
         <h2>Data Science</h2>
         <section className="card-aspects__container">
           <ul>
@@ -45,12 +45,11 @@ class index extends Component {
           Are you eager to roll up your sleeves and harness data to drive policy
           change? Do you enjoy sifting ...
         </h5>
-        <Link className="text-reset text-decoration-none" to={`/job/1`}>
-          <button>More...</button>
+        <button className="apply">Apply</button>
+        <Link className="text-reset text-decoration-none" to={`/`}>
+          <button className="back">Back</button>
         </Link>
       </div>
     );
   }
 }
-
-export default index;

@@ -1,19 +1,26 @@
 @import "../../../styles/sass/variables";
 
-.card_container {
-  height: 150px;
-  width: 800px;
+.body__cont {
+  display: flex;
+  height: 430px;
+  justify-content: center;
+  align-items: center;
+}
+
+.job_container {
+  height: 380px;
+  width: 1000px;
   background-color: $cards-bg;
   border-radius: 8px;
   box-shadow: $shadow;
   h2 {
-    margin: 18px 0 0 40px;
+    margin: 18px 0 20px 80px;
     padding-top: 10px;
   }
   ul {
     width: 85%;
     display: grid;
-    margin-top: 8px;
+    margin: 8px 0 60px 20px;
     padding: 0;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     justify-content: left;
@@ -25,11 +32,16 @@
     }
   }
   h5 {
-    margin: 10px 0 10px 40px;
+    margin: 10px 0 10px 80px;
   }
   button {
-    margin: 0 360px;
     @include buttons(30px, 80px);
+  }
+  .apply {
+    margin: 150px 120px 0 260px;
+  }
+  .back {
+    margin: 150px auto 0 200px;
   }
 }
 

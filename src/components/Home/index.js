@@ -18,6 +18,7 @@ class index extends Component {
           <section className="cards__cont">
             <Cards children="oro" />
             <Cards children="maths" />
+            <Cards children="perro" />
           </section>
         </div>
       </div>

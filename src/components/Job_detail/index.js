@@ -82,7 +82,7 @@ class index extends Component {
             </h5>
             <section className="buttons">
               <button className="apply">Apply</button>
-              <Link className="text-reset text-decoration-none" to={`/job/1`}>
+              <Link className="text-reset text-decoration-none" to={`/`}>
                 <button className="back">Back</button>
               </Link>
             </section>

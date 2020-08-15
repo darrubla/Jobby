@@ -16,21 +16,8 @@ class index extends Component {
         <div className="body__container">
           <Sidebar />
           <section className="cards__cont">
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
+            <Cards children="oro" />
+            <Cards children="maths" />
           </section>
         </div>
       </div>

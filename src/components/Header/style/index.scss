@@ -16,6 +16,7 @@
   }
   input {
     height: 40px;
+    width: 400px;
     padding-left: 10px;
     border: 1px solid #8cade3;
     box-sizing: border-box;
@@ -30,5 +31,9 @@
     background-color: $primary-color;
     color: $tertiary-color;
     font-weight: 700;
+  }
+  #hd-submit,
+  a {
+    justify-self: center;
   }
 }

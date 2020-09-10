@@ -81,7 +81,7 @@ class index extends Component {
               Are you eager to roll up your sleeves and harness data to drive
               policy change? Do you enjoy sifting ...
             </h5>
-            <Link className="text-reset text-decoration-none" to={`/job/1`}>
+            <Link to={`/job/1`}>
               <button>More...</button>
             </Link>
           </div>

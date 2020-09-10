@@ -158,7 +158,7 @@ class index extends Component {
               </p>
               <section className="buttons">
                 <button className="apply">Apply</button>
-                <Link className="text-reset text-decoration-none" to={`/`}>
+                <Link className="text-reset text-decoration-none" to={`/home`}>
                   <button className="back">Back</button>
                 </Link>
               </section>

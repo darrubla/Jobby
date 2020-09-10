@@ -10,56 +10,61 @@ export default class index extends Component {
 
   render() {
     return (
-      <div className="form-container">
-        <div className="form-content">
-          <form>
-            <h2>Sign In</h2>
+      <div className="view-container">
+        <div className="form-container">
+          <div className="form-content">
+            <form>
+              <h2>Sign In</h2>
 
-            <div className="form-group">
-              <label>Email address</label>
-              <input
-                type="email"
-                className="form-control"
-                placeholder="Enter email"
-                id="email"
-              />
-            </div>
-
-            <div className="form-group">
-              <label>Password</label>
-              <input
-                type="password"
-                className="form-control"
-                placeholder="Enter password"
-                id="password"
-              />
-            </div>
-
-            <div className="form-group">
-              <div className="custom-control custom-checkbox">
+              <div className="form-group">
+                <label>Email address</label>
                 <input
-                  type="checkbox"
-                  className="custom-control-input"
-                  id="customCheck1"
+                  type="email"
+                  className="form-control"
+                  placeholder="Enter email"
+                  id="email"
                 />
-                <label className="custom-control-label" htmlFor="customCheck1">
-                  Remember me
-                </label>
               </div>
-            </div>
-            <Link to={`/`}>
-              <button
-                type="submit"
-                className="btn btn-primary btn-block"
-                id="submit-btn"
-              >
-                Sign In
-              </button>
-            </Link>
-            <p className="forgot-password text-right" id="pwd-forgot">
-              Forgot <a href="#">password?</a>
-            </p>
-          </form>
+
+              <div className="form-group">
+                <label>Password</label>
+                <input
+                  type="password"
+                  className="form-control"
+                  placeholder="Enter password"
+                  id="password"
+                />
+              </div>
+
+              <div className="form-group">
+                <div className="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    className="custom-control-input"
+                    id="customCheck1"
+                  />
+                  <label
+                    className="custom-control-label"
+                    htmlFor="customCheck1"
+                  >
+                    Remember me
+                  </label>
+                </div>
+              </div>
+              <Link to={`/home`}>
+                <button
+                  type="submit"
+                  className="btn btn-primary btn-block"
+                  id="submit-btn"
+                >
+                  Sign In
+                </button>
+              </Link>
+              <p className="forgot-password text-right" id="pwd-forgot">
+                Forgot <a href="#">password?</a>
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     );
